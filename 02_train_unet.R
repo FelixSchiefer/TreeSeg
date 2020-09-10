@@ -104,11 +104,8 @@ validationDataset <- createDataset(validData, train = F, batch = batchSize, epoc
 
 # Custom loss function ----------------------------------------------------
 
-# weights = c(2.44, 0.39, 30.01, 0.95, 0.91, 0.23, 1.0, 12.87, 10.29, 0.61, 33.88, 3.23, 2.98, 0.14) #41
-# weights = c(2.39, 0.38, 29.73, 0.93, 0.91, 0.23, 0.98, 12.78, 10.11, 0.92, 33.25, 3.17, 3.96, 0.21) #48
-# weights = c(2.37, 0.38, 29.09, 0.89, 0.92, 0.22, 1.05, 12.45, 10.45, 0.76, 33.47, 3.63, 4.03, 0.18) #51
-load("01_code/areaShare_seed28_10_75_25_50s.RData")
-weights    <- areaSharePer[,"train"]*100
+weights    <- c(2.3887701, 0.2616388, 28.6818629, 0.7869136, 0.9461610, 0.1502391, 0.9411861,
+                14.1978020, 11.6882740, 0.8860257, 31.2262007, 3.4815635, 4.1307636, 0.2325988)
 invWeights <- 100-weights
 # invWeights <- invWeights^2
 invWeights <- invWeights/sum(invWeights)

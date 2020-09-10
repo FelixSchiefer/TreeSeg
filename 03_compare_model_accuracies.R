@@ -18,11 +18,11 @@ runs  <- runs[epos == 40 & nSpec == 50]
 runs  <- runs[c(3,7,1, 4,8,2, 12,14,6,10)]
 sites <- list.files("02_pipeline/softmax/img/")
 
-weights = c(2.3887701, 0.2616388, 28.6818629, 0.7869136, 0.9461610, 0.1502391, 0.9411861,
-            14.1978020, 11.6882740, 0.8860257, 31.2262007, 3.4815635, 4.1307636, 0.2325988)
-invWeights = 100-weights
+weights    <- c(2.3887701, 0.2616388, 28.6818629, 0.7869136, 0.9461610, 0.1502391, 0.9411861,
+                14.1978020, 11.6882740, 0.8860257, 31.2262007, 3.4815635, 4.1307636, 0.2325988)
+invWeights <- 100-weights
 # invWeights <- invWeights^2
-invWeights = invWeights/sum(invWeights)
+invWeights <- invWeights/sum(invWeights)
 sum(invWeights)
 
 
