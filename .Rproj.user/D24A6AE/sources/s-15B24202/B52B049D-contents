@@ -3,7 +3,7 @@
 
 ## Image Tiling
 ```markdown
-sample code
+sample code 
 ```
 
 
